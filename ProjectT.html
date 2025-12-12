@@ -237,6 +237,7 @@ window.fadeOutTheme = function(duration = 2000) {
 };
 
 /* Fade in the currently playing theme over a duration (ms) */
+
 window.fadeInTheme = function(duration = 2000, targetVolume = 1.0) {
     const audio = window.currentTheme;
     if (!audio) {
@@ -277,7 +278,9 @@ window.playTheme = function(themeName, options = {}) {
 
     const audio = new Audio(window.themeFiles[themeName]);
     audio.loop = options.loop ?? true;
-    audio.volume = 0; // if fade-in, start silent; otherwise overwritten below
+    audio.volume = 0; 
+  
+  // if fade-in, start silent; otherwise override below
 
     window.currentTheme = audio;
     window.currentThemeName = themeName;
