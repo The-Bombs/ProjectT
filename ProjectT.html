@@ -2862,7 +2862,9 @@ A whisper cna be heard coming from inside the arcade, somehow.
 
 Eddie had wondered if Alistair had moved on, and so after a quick self-evaluation in the plastic wrap still freshly applied to the door of the arcade, he creeks the door open and enters the arcade.
 
-[[Enter the arcade-&gt;EnterArcade]]</tw-passagedata><tw-passagedata pid="139" name="EnterArcade" tags="" position="400,1050" size="100,100">&lt;div id=&quot;current-player-box&quot;&gt;
+[[Enter the arcade-&gt;EnterArcade]]</tw-passagedata><tw-passagedata pid="139" name="EnterArcade" tags="" position="400,1050" size="100,100">&lt;&lt;run stopAllThemes()&gt;&gt;
+&lt;&lt;run playTheme(&quot;arcadeTheme&quot;, { loop: true, volume: 0.6 })&gt;&gt;
+&lt;div id=&quot;current-player-box&quot;&gt;
   &lt;span style=&quot;color:#ccc;&quot;&gt;You are currently playing as: &lt;/span&gt;
 &lt;&lt;print &quot;&lt;span style=&#39;color:&quot; + $CurrentPlayer.colour + &quot;&#39;&gt;&quot; + $CurrentPlayer.name+ &quot;&lt;/span&gt;&quot;&gt;&gt;
   &lt;span id=&quot;$CurrentPlayer&quot;&gt;&lt;/span&gt;
@@ -3120,7 +3122,9 @@ Alistair was different to her. Warm. Like walking into a log cabin in the alps.
 
 She felt safe around him, yet masked it as &quot;using&quot; him. After all, she never knew what it felt like. To love. To be wanted.
 
-[[Continue-&gt;MContinue4]]</tw-passagedata><tw-passagedata pid="155" name="MContinue4" tags="" position="700,1325" size="100,100">&lt;div id=&quot;current-player-box&quot;&gt;
+[[Continue-&gt;MContinue4]]</tw-passagedata><tw-passagedata pid="155" name="MContinue4" tags="" position="700,1325" size="100,100">&lt;&lt;run stopAllThemes()&gt;&gt;
+&lt;&lt;run playTheme(&quot;arcadeTheme&quot;, { loop: true, volume: 0.6 })&gt;&gt;
+&lt;div id=&quot;current-player-box&quot;&gt;
   &lt;span style=&quot;color:#ccc;&quot;&gt;You are currently playing as: &lt;/span&gt;
 &lt;&lt;print &quot;&lt;span style=&#39;color:&quot; + $CurrentPlayer.colour + &quot;&#39;&gt;&quot; + $CurrentPlayer.name+ &quot;&lt;/span&gt;&quot;&gt;&gt;
   &lt;span id=&quot;$CurrentPlayer&quot;&gt;&lt;/span&gt;
@@ -3363,9 +3367,7 @@ Maybe she doesn&#39;t need them as much as she thought.
 
 &lt;&lt;link &quot;Continue&quot;&gt;&gt;
         &lt;&lt;goto &quot;JackAct2Start&quot;&gt;
-        &lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="172" name="ChooseEddie" tags="" position="1150,1775" size="100,100">&lt;&lt;run stopAllThemes()&gt;&gt;
-&lt;&lt;run playTheme(&quot;ghostTheme&quot;, { volume: 0.6, loop: true, fadeIn: true, fadeInDuration: 3000 })&gt;&gt;
-&lt;div id=&quot;current-player-box&quot;&gt;
+        &lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="172" name="ChooseEddie" tags="" position="1150,1775" size="100,100">&lt;div id=&quot;current-player-box&quot;&gt;
   &lt;span style=&quot;color:#ccc;&quot;&gt;You are currently playing as: &lt;/span&gt;
 &lt;&lt;print &quot;&lt;span style=&#39;color:&quot; + $CurrentPlayer.colour + &quot;&#39;&gt;&quot; + $CurrentPlayer.name+ &quot;&lt;/span&gt;&quot;&gt;&gt;
   &lt;span id=&quot;$CurrentPlayer&quot;&gt;&lt;/span&gt;
@@ -3421,7 +3423,9 @@ The Machine chose it&#39;s prize, just like She chose hers.
 
 &lt;&lt;link &quot;Continue&quot;&gt;&gt;
         &lt;&lt;goto &quot;JackAct2Start&quot;&gt;
-        &lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="176" name="FateSealed" tags="" position="1300,1775" size="100,100">&lt;div id=&quot;current-player-box&quot;&gt;
+        &lt;&lt;/link&gt;&gt;</tw-passagedata><tw-passagedata pid="176" name="FateSealed" tags="" position="1300,1775" size="100,100">&lt;&lt;run stopAllThemes()&gt;&gt;
+&lt;&lt;run playTheme(&quot;ghostTheme&quot;, { volume: 0.6, loop: true, fadeIn: true, fadeInDuration: 3000 })&gt;&gt;
+&lt;div id=&quot;current-player-box&quot;&gt;
   &lt;span style=&quot;color:#ccc;&quot;&gt;You are currently playing as: &lt;/span&gt;
 &lt;&lt;print &quot;&lt;span style=&#39;color:&quot; + $CurrentPlayer.colour + &quot;&#39;&gt;&quot; + $CurrentPlayer.name+ &quot;&lt;/span&gt;&quot;&gt;&gt;
   &lt;span id=&quot;$CurrentPlayer&quot;&gt;&lt;/span&gt;
